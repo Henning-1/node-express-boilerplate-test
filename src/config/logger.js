@@ -10,7 +10,6 @@ const enumerateErrorFormat = winston.format((info) => {
 
 const levelForEnv = (env) => {
   if (env === 'development') return 'debug';
-  if (env === 'production') return 'error';
   return 'info';
 };
 
